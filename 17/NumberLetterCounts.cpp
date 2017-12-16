@@ -8,7 +8,7 @@ using namespace std;
 
 string EDigits[]={"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
 string SDigits[]={"Cero","Uno","Dos","Tres","Cuatro","Cinco","Seis","Siete","Ocho","Nueve"};
-string ESpecial[]={"Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Ninteen"};
+string ESpecial[]={"Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
 string SSpecial[]={"Diez","Once","Doce","Trece","Catorce","Quince","Dieciseis","Diecisiete","Dieciocho","Diecinueve"};
 string ETens[]={"Zero","Ten","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
 string STens[]={"Cero","Diez","Veintos","Trienta","Cuarenta","Cincuenta","Sesenta","Setenta","Ochenta","Noventa"};
@@ -50,7 +50,7 @@ int main()
 {
     int Count=0;
     int From=1;
-    int To=1000;
+    int To=999;
 
     //cout<<"Enter a number "; cin>>From;
     //WordAndLength Word=HandleNumber(From);
@@ -58,7 +58,7 @@ int main()
     for(int a=From;a<=To;a++)
     {
         WordAndLength LastTwo=HandleNumber(a);
-        cout<<a<<" -> "<<LastTwo.Word<<endl;
+        cout<<a<<" -> "<<LastTwo.Word<<" -> "<<LastTwo.Count<<endl;
         Count+=LastTwo.Count;
     }
     cout<<"The total count is "<<Count<<endl;

@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int Upto = 5;
+    int Upto = 100;
     int Terms = Upto-1;
     int Count = 0;
     vector<float> Array;
@@ -20,7 +20,7 @@ int main()
         }
     }
     //sort(Array.begin(),Array.end());
-    for( float j: Array)
-        cout<<exp(j)<<endl;
+    //for( float j: Array)
+    //    cout<<exp(j)<<endl;
     cout<<Count<<endl;
 }

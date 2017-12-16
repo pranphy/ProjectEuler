@@ -31,7 +31,7 @@ bool isLychrel(long x)
 		string Reverse = CurrentString;
 		reverse(Reverse.begin(),Reverse.end());
 		CurrentNumber = stol(Reverse)+stol(CurrentString);
-		cout<<CurrentString<<" is the string  and reverse is "<<Reverse<<endl;
+		//cout<<CurrentString<<" is the string  and reverse is "<<Reverse<<endl;
 		if(Iterations != 1 and isPalindrome(CurrentString) ) return false;
 	}
 	return true;
